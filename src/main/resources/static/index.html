@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/2.3.1/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <title>Billett</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <h1>BESTILLING AV KINOBILLETTER</h1>
+            <form class="form">
+                <input type="hidden" id="id"/>
+                <div class="form-group">
+                    <label>Film</label>
+                    <select id="film" onchange="validerFilm()">
+                        <option selected disabled>Velg film her</option>
+                        <option value="Dune: Part Two">Dune: Part Two</option>
+                        <option value="Mean Girls">Mean Girls</option>
+                        <option value="Casablanca">Casablanca</option>
+                        <option value="Shrek 7">Shrek 7</option>
+                        <option value="Webprogramming - The Documentary">Webprogramming - The Documentary</option>
+                    </select>
+                    <span id="feilFilm" style="color:red"></span>
+                </div>
+                <div class="form-group">
+                    <label>Antall</label>
+                    <input onchange="validerAntall()" type="number" id="antall" min="1" value="0">
+                    <span id="feilAntall" style="color:red"></span>
+                </div>
+                <div class="form-group" >
+                    <label>Fornavn</label>
+                    <input onchange="validerFornavn()" type="text" id="fornavn">
+                    <span id="feilFornavn" style="color:red"></span>
+                </div>
+                <div class="form-group">
+                    <label>Etternavn </label>
+                    <input onchange="validerEtternavn()" type="text" id="etternavn">
+                    <span id="feilEtternavn" style="color:red"></span>
+                </div>
+                <div class="form-group">
+                    <label>TelefonNr</label>
+                    <input onchange="validerTelefon()" type="tel" id="telefon">
+                    <span id="feilTelefon" style="color:red"></span>
+                </div>
+                <div class="form-group">
+                    <label>Epost</label>
+                    <input onchange="validerEmail()" type="email" id="email">
+                    <span id="feilEmail" style="color:red"></span>
+                </div>
+            </form>
+
+            <button id="Betal" class="btn btn-primary" onclick="validerOgRegKunde()">Betal</button>
+
+            <div class="col-md-8">
+                <h2>Bestilte billetter:</h2>
+                <table class="table">
+                    <div id="kundene" ></div>
+                </table>
+                <button onclick="slettKundene()">Slett alle bestillinger</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>>
