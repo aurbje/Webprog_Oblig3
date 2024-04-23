@@ -1,9 +1,9 @@
 # Info om innlevering - Oblig 3:
-Student: Aurora Isabel Toset Bjerke
-OsloMET-brukernavn: aubje3225
-Github-brukernavn: aurbje
-Youtube-link: https://youtu.be/-lggNR8gCGs
-GitHub Repo Link: https://github.com/aurbje/oblig-3.git
+- Student: Aurora Isabel Toset Bjerke
+- OsloMET-brukernavn: aubje3225
+- Github-brukernavn: aurbje
+- Youtube-link: https://youtu.be/-lggNR8gCGs
+- GitHub-Repo Link: https://github.com/aurbje/oblig-3.git
 
 ## Kort beskrivelse av applikasjonen: Kinobillettbestilling
 Denne applikasjonen fungerer som et billettbestillingssystem der brukerne kan
@@ -26,6 +26,7 @@ GET- og POST-metoder for å hente og sende data.
 ## Hvordan bruke nettsiden:
 
 1. Åpne index.html i en nettleser.
-2. Velg en film, fyll ut antall billetter, fornavn, etternavn, telefonnummer og e-post, og klikk deretter på "Kjøp billett" for å registrere billetten.
-3. Alle billetter blir vist under "Alle billetter".
-4. For å slette alle billetter, klikk på "Slett alle billetter".
+2. Velg en film, fyll ut antall billetter, fornavn, etternavn, telefonnummer og e-post,
+   og klikk deretter på "Kjøp billett" for å registrere billetten.
+4. Alle billetter blir vist under "Alle billetter".
+5. For å slette alle billetter, klikk på "Slett alle billetter".
