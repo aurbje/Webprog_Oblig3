@@ -1,10 +1,9 @@
-$(function(){
-    // hent kunden med kunde-id fra url og vis denne i skjemaet
+$(function(){ // hent kundeinformasjon fra serveren basert på kunde-IDen som er tilstede i URLen.
     const id = window.location.search.substring(1);
     const url = "/hentEnKunde?" + id
     $.get(url,function(kunde){
         console.log("kunde id"+url +id +kunde.id)
-        $("#id").val(kunde.id); // må ha med id inn skjemaet, hidden i html
+        $("#id").val(kunde.id); // ID-en til kunden må inkluderes i skjemaet i HTML-dokumentet.
         $("#film").val(kunde.film);
         $("#antall").val(kunde.antall);
         $("#fornavn").val(kunde.fornavn);
@@ -17,7 +16,7 @@ $(function(){
 
 function endreKunden() {
     const kunde = {
-        id : $("#id").val(), // må ha med denne som ikke har blitt endret for å vite hvilken kunde som skal endres
+        id : $("#id").val(), // ID-en til kunden må inkluderes når man sender data til serveren for å oppdatere kundeinformasjonen, så serveren vet hvilken kunde som skal endres.
         film : $("#film").val(),
         antall : $("#antall").val(),
         fornavn : $("#fornavn").val(),

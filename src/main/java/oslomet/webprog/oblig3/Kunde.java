@@ -9,8 +9,8 @@ public class Kunde {
     private String etternavn;
     private String telefon;
     private String email;
-    public Kunde() {
-    }
+            public Kunde() {
+            }
 
     public Kunde(int id, String film, String antall, String fornavn, String etternavn, String telefon, String email) {
         this.id = id;
@@ -27,9 +27,9 @@ public class Kunde {
     public int getId() {
         return id;
     }
-    public void setId(int id) {
+        public void setId(int id) {
         this.id = id;
-    }
+            }
 
     public String getFilm() {
         return film;
