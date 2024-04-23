@@ -8,11 +8,11 @@
 ## Kort beskrivelse av applikasjonen: Kinobillettbestilling
 Denne applikasjonen fungerer som et billettbestillingssystem der brukerne kan
 velge filmer, angi antall billetter og legge til personlig informasjon som navn,
-telefonnummer og e-postadresse. Når brukerern legger inn all nødvendig
+telefonnummer og e-postadresse. Når brukeren legger inn all nødvendig
 informasjon, opprettes en ny rad i systemet som viser detaljene for bestillingen.
 
 Ved feil informasjon i input-feltene vil brukeren få beskjed om at informasjonen
-er påkrevd. I tillegg er det implementert validering, så brukeren ikke kan legge
+er påkrevd. I tillegg er det lagt inn validering, så brukeren ikke kan legge
 inn bokstaver i telefonnummerfeltet og heller ikke bestille antall billetter under
 0 eller over 50. For å slette bestillingsradene kan brukeren trykke på en egen
 knapp nederst i applikasjonen, som fjerner alle de eksisterende radene med
