@@ -20,7 +20,7 @@ informasjon.
 
 Applikasjonen er nå omformet slik at den bruker Spring Web for å håndtere dataene.
 I tillegg er frontenden av applikasjonen, representert av index.html, stilisert ved hjelp
-av Bootstrap. Kommunikasxjonen mellom frontend og backend skjer ved bruk av
+av Bootstrap. Kommunikasjonen mellom frontend og backend skjer ved bruk av
 GET- og POST-metoder for å hente og sende data.
 
 ## Hvordan bruke nettsiden:
