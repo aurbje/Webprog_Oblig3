@@ -3,7 +3,7 @@
 - OsloMET-brukernavn: aubje3225
 - Github-brukernavn: aurbje
 - Youtube-link: https://youtu.be/-lggNR8gCGs
-- GitHub-Repo Link: https://github.com/aurbje/oblig-3.git
+- GitHub-Repo Link: [https://github.com/aurbje/oblig-3.git](https://github.com/aurbje/Webprog_Oblig3.git)
 
 ## Kort beskrivelse av applikasjonen: Kinobillettbestilling
 Denne applikasjonen fungerer som et billettbestillingssystem der brukerne kan
