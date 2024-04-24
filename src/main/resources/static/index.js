@@ -39,8 +39,8 @@ function formaterData(kunder){
             "<td>" + kunder[i].etternavn + "</td>" +
             "<td>" + kunder[i].telefon + "</td>" +
             "<td>" + kunder[i].email + "</td>" +
-            "<td> <a class='btn btn-primary' href='endreKunde.html?id=" + kunder[i].id + "'>Endre</a></td>" +
-            "<td> <button class='btn btn-danger' onclick='slettEnKunde("+kunder[i].id+")'>Slett</button></td>"+
+            "<td> <a class='btn btn-primary' href='endreKunde.html?id=" + kunder[i].id + "'>Endre bestilling</a></td>" +
+            "<td> <button class='btn btn-danger' onclick='slettEnKunde("+kunder[i].id+")'>Slett bestilling</button></td>"+
             "</tr>";
     }
 
@@ -71,7 +71,7 @@ function filmValgt() {
 
 function validerFilm(film){
     if (film === null || film === "" || film === "Velg film her"){
-        $("#feilFilm").html("Vennligst velg en film").show();
+        $("#feilFilm").html("Vennligst velg en film.").show();
         return false;
     } else {
         // Hvis antallet er gyldig, skjul eventuelle feilmeldinger
@@ -83,7 +83,7 @@ function validerAntall(antall) {
 
 
     if (antall < 1 || antall > 50) {
-        $("#feilAntall").html("Vennligst fyll ut antall fra 1 til 50").show();
+        $("#feilAntall").html("Vennligst fyll ut et antall fra 1 til 50.").show();
         return false;
     } else {
         $("#feilAntall").html("").hide();
@@ -95,7 +95,7 @@ function validerFornavn(fornavn) {
     const regexp = /^[a-zA-ZæøåÆØÅ. \-]{2,20}$/;
     const ok = regexp.test(fornavn);
     if (!ok) {
-        $("#feilFornavn").html("Fornavnet må bestå av 2 til 20 bokstaver");
+        $("#feilFornavn").html("Vennligst fyll inn et gyldig fornavn. Det må bestå av 2 til 20 bokstaver.");
         return false;
     } else {
         $("#feilFornavn").html("");
@@ -107,7 +107,7 @@ function validerEtternavn(etternavn) {
     const regexp = /^[a-zA-ZæøåÆØÅ. \-]{2,20}$/;
     const ok = regexp.test(etternavn);
     if (!ok) {
-        $("#feilEtternavn").html("Etternavnet må bestå av 2 til 20 bokstaver");
+        $("#feilEtternavn").html("Vennligst fyll inn et gyldig etternavn. Det må bestå av 2 til 20 bokstaver.");
         return false;
     } else {
         $("#feilEtternavn").html("");
@@ -117,10 +117,10 @@ function validerEtternavn(etternavn) {
 
 function validerTelefon() {
     const telefon = $("#telefon").val();
-    const regexp = /^\d+$/;
+    const regexp = /^\d{8,}$/;
     const ok = regexp.test(telefon);
     if (!ok) {
-        $("#feilTelefon").html("Telefonnummer må bestå av tall");
+        $("#feilTelefon").html("Vennligst fyll inn et gyldig telefonnummer med minst 8 tall.");
         return false;
     } else {
         $("#feilTelefon").html("");
@@ -133,7 +133,7 @@ function validerEmail() {
     const regexp = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const ok = regexp.test(email);
     if (!ok) {
-        $("#feilEmail").html("Vennligst oppgi en gyldig e-postadresse");
+        $("#feilEmail").html("Vennligst oppgi en gyldig e-postadresse.");
         return false;
     } else {
         $("#feilEmail").html("");
